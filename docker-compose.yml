@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:7.0
+    container_name: vinyl-store-mongo
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: vinyl_store
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - vinyl-network
+
+volumes:
+  mongo-data:
+
+networks:
+  vinyl-network:
+

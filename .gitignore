@@ -1,0 +1,34 @@
+# Dependencias de Node.js
+frontend/node_modules/
+frontend/package-lock.json
+frontend/.env
+frontend/dist/
+frontend/build/
+
+# Dependencias de Go
+backend/vendor/
+backend/*.exe
+backend/*.exe~
+backend/*.dll
+backend/*.so
+backend/*.dylib
+
+# Archivos de entorno
+backend/.env
+*.env
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos temporales
+*.tmp
+*.temp
